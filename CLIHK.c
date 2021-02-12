@@ -1,12 +1,8 @@
 #include <Windows.h>
-#include <ctype.h>
-#include <stdio.h>
 
 #include "config.h"
 
 extern const char* hkfuncpair[];
-
-extern const char* quitstr;
 
 void getinput(unsigned short* alnum, unsigned short* ctl);
 
@@ -27,7 +23,7 @@ int main()
 		/*input is done; now iteratively parse strings for matches*/
 		for (int i = 0; i < sizeof(hkfuncpair)/sizeof(char*); i+=2) {
 			if (checkresults(alphanum, control, hkfuncpair[i])) {
-				if (!strcmp(quitstr, hkfuncpair[i + 1]))
+				if (!strcmp(QUIT, hkfuncpair[i + 1]))
 					exit(1);
 				/*continue execution if it wasn't the exitstr*/
 				else
