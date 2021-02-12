@@ -24,5 +24,3 @@ const char* hkfuncpair[] = {
 	/*Rest are what I use commonly*/
 	"rsW", "start firefox duckduckgo.com",
 };
-
-const char* quitstr = QUIT;
