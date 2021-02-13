@@ -4,7 +4,7 @@
  * Use capital letters for what you type
  * Use lowercase for control keys
  * Important to note by default the command "quit" will have this process end
- *	you can change this with the "quitstr"
+ *	you can change this by changing the QUIT macro
  * Only supports AlphaNumeric keys, as well as
  * Control Keys:
  * must be preceeded by l or r for left or right
