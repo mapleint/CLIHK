@@ -1,4 +1,4 @@
-# CLIHK
+# CLIHK Command line interfacing HotKeys
 Execs windows commands when a key combination is inputted
 
 ## Customization
